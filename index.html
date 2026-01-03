@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Pedacitos Pastelería - Los mejores pasteles, tortas y postres artesanales. Haz tu pedido por WhatsApp.">
+    <meta name="keywords" content="pastelería, pasteles, tortas, postres, cupcakes, pedidos, Sucre, Bolivia">
+    <meta name="author" content="Pedacitos Pastelería">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Pedacitos Pastelería">
+    <meta property="og:description"
+        content="Los mejores pasteles, tortas y postres artesanales. Haz tu pedido por WhatsApp.">
+    <meta property="og:image" content="assets/logo.png">
+
+    <title>Pedacitos Pastelería | Pasteles y Postres Artesanales</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/logo.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="#" class="nav-logo">
+                    <img src="assets/logo.png" alt="Pedacitos Pastelería">
+                </a>
+
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+                    <li><a href="#productos" class="nav-link">Productos</a></li>
+                    <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                    <li><a href="https://wa.me/59173476653?text=Hola%20Pedacitos!%20Me%20gustaría%20hacer%20un%20pedido"
+                            class="btn btn-primary" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Pedir Ahora
+                        </a></li>
+                </ul>
+
+                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text reveal">
+                    <h1>Endulzamos tus <span>momentos especiales</span></h1>
+                    <p>En Pedacitos creamos pasteles artesanales con amor y dedicación. Cada postre es una obra de arte
+                        hecha especialmente para ti.</p>
+                    <div class="hero-buttons">
+                        <a href="https://wa.me/59173476653?text=Hola%20Pedacitos!%20Me%20gustaría%20hacer%20un%20pedido"
+                            class="btn btn-whatsapp" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Hacer Pedido
+                        </a>
+                        <a href="#productos" class="btn btn-secondary">
+                            <i class="fas fa-cake-candles"></i> Ver Productos
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image reveal">
+                    <img src="assets/logo.png" alt="Pedacitos Pastelería">
+                    <div class="hero-decorations">
+                        <div class="decoration decoration-1"></div>
+                        <div class="decoration decoration-2"></div>
+                        <div class="decoration decoration-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="section products" id="productos">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Nuestros Productos</h2>
+                <p>Descubre nuestra deliciosa variedad de pasteles, tortas y postres artesanales</p>
+            </div>
+
+            <div class="products-categories reveal">
+                <button class="category-btn active" data-category="all">Todos</button>
+                <button class="category-btn" data-category="tortas">Tortas</button>
+                <button class="category-btn" data-category="cupcakes">Cupcakes</button>
+                <button class="category-btn" data-category="postres">Postres</button>
+                <button class="category-btn" data-category="especiales">Especiales</button>
+            </div>
+
+            <div class="products-grid">
+                <!-- Tortas -->
+                <div class="product-card reveal" data-category="tortas">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&h=300&fit=crop"
+                            alt="Torta de Chocolate">
+                        <span class="product-badge">Popular</span>
+                    </div>
+                    <div class="product-info">
+                        <h4>Torta de Chocolate</h4>
+                        <p>Deliciosa torta de chocolate con ganache y decoración artesanal</p>
+                        <div class="product-footer">
+                            <span class="product-price">Bs. 150</span>
+                            <a href="https://wa.me/59173476653?text=Hola!%20Me%20interesa%20la%20Torta%20de%20Chocolate"
+                                class="product-order" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card reveal" data-category="tortas">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=400&h=300&fit=crop"
+                            alt="Torta Red Velvet">
+                    </div>
+                    <div class="product-info">
+                        <h4>Torta Red Velvet</h4>
+                        <p>Suave torta red velvet con frosting de queso crema</p>
+                        <div class="product-footer">
+                            <span class="product-price">Bs. 180</span>
+                            <a href="https://wa.me/59173476653?text=Hola!%20Me%20interesa%20la%20Torta%20Red%20Velvet"
+                                class="product-order" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card reveal" data-category="tortas">
+                    <div class="product-image">
+                        <img src="assets/strawberry_cake.png" alt="Torta de Fresas">
+                        <span class="product-badge">Nuevo</span>
+                    </div>
+                    <div class="product-info">
+                        <h4>Torta de Fresas</h4>
+                        <p>Torta esponjosa con crema y fresas naturales frescas</p>
+                        <div class="product-footer">
+                            <span class="product-price">Bs. 160</span>
+                            <a href="https://wa.me/59173476653?text=Hola!%20Me%20interesa%20la%20Torta%20de%20Fresas"
+                                class="product-order" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cupcakes -->
+                <div class="product-card reveal" data-category="cupcakes">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?w=400&h=300&fit=crop"
+                            alt="Cupcakes Variados">
+                        <span class="product-badge">Pack</span>
+                    </div>
+                    <div class="product-info">
+                        <h4>Cupcakes Variados</h4>
+                        <p>Docena de cupcakes con diferentes sabores y decoraciones</p>
+                        <div class="product-footer">
+                            <span class="product-price">Bs. 80</span>
+                            <a href="https://wa.me/59173476653?text=Hola!%20Me%20interesan%20los%20Cupcakes%20Variados"
+                                class="product-order" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card reveal" data-category="cupcakes">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1587668178277-295251f900ce?w=400&h=300&fit=crop"
+                            alt="Cupcakes de Vainilla">
+                    </div>
+                    <div class="product-info">
+                        <h4>Cupcakes de Vainilla</h4>
+                        <p>Suaves cupcakes de vainilla con buttercream colorido</p>
+                        <div class="product-footer">
+                            <span class="product-price">Bs. 70</span>
+                            <a href="https://wa.me/59173476653?text=Hola!%20Me%20interesan%20los%20Cupcakes%20de%20Vainilla"
+                                class="product-order" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Postres -->
+                <div class="product-card reveal" data-category="postres">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=300&fit=crop"
+                            alt="Cheesecake">
+                        <span class="product-badge">Favorito</span>
+                    </div>
+                    <div class="product-info">
+                        <h4>Cheesecake Clásico</h4>
+                        <p>Cremoso cheesecake con base de galleta y topping de frutos rojos</p>
+                        <div class="product-footer">
+                            <span class="product-price">Bs. 120</span>
+                            <a href="https://wa.me/59173476653?text=Hola!%20Me%20interesa%20el%20Cheesecake%20Clásico"
+                                class="product-order" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card reveal" data-category="postres">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400&h=300&fit=crop"
+                            alt="Tiramisú">
+                    </div>
+                    <div class="product-info">
+                        <h4>Tiramisú</h4>
+                        <p>Clásico tiramisú italiano con café expreso y mascarpone</p>
+                        <div class="product-footer">
+                            <span class="product-price">Bs. 90</span>
+                            <a href="https://wa.me/59173476653?text=Hola!%20Me%20interesa%20el%20Tiramisú"
+                                class="product-order" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Especiales -->
+                <div class="product-card reveal" data-category="especiales">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1535254973040-607b474cb50d?w=400&h=300&fit=crop"
+                            alt="Torta de Cumpleaños">
+                        <span class="product-badge">Personalizable</span>
+                    </div>
+                    <div class="product-info">
+                        <h4>Torta de Cumpleaños</h4>
+                        <p>Torta personalizada para tu celebración especial</p>
+                        <div class="product-footer">
+                            <span class="product-price">Desde Bs. 200</span>
+                            <a href="https://wa.me/59173476653?text=Hola!%20Me%20interesa%20una%20Torta%20de%20Cumpleaños%20personalizada"
+                                class="product-order" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card reveal" data-category="especiales">
+                    <div class="product-image">
+                        <img src="assets/wedding_cake.png" alt="Torta de Bodas">
+                        <span class="product-badge">Premium</span>
+                    </div>
+                    <div class="product-info">
+                        <h4>Torta de Bodas</h4>
+                        <p>Elegante torta de varios pisos para tu día especial</p>
+                        <div class="product-footer">
+                            <span class="product-price">Consultar</span>
+                            <a href="https://wa.me/59173476653?text=Hola!%20Me%20interesa%20información%20sobre%20Tortas%20de%20Bodas"
+                                class="product-order" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="nosotros">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image reveal">
+                    <img src="assets/bakery.png" alt="Nuestra pastelería">
+                </div>
+                <div class="about-text reveal">
+                    <h2>Sobre <span>Nosotros</span></h2>
+                    <p>En <strong>Pedacitos Pastelería</strong> creemos que cada bocado cuenta una historia. Desde
+                        nuestros inicios, nos hemos dedicado a crear pasteles y postres artesanales que endulzan los
+                        momentos más especiales de nuestros clientes.</p>
+                    <p>Utilizamos ingredientes de la más alta calidad y técnicas tradicionales combinadas con
+                        creatividad moderna para ofrecerte productos únicos y deliciosos.</p>
+
+                    <div class="about-features">
+                        <div class="feature">
+                            <div class="feature-icon">🎂</div>
+                            <h4>Artesanal</h4>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">❤️</div>
+                            <h4>Con Amor</h4>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">⭐</div>
+                            <h4>Calidad</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contacto">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Contáctanos</h2>
+                <p>Estamos listos para hacer realidad tu pedido especial</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info reveal">
+                    <h3>Información de Contacto</h3>
+                    <p>¿Tienes alguna pregunta o quieres hacer un pedido especial? No dudes en contactarnos por
+                        cualquiera de nuestros canales.</p>
+
+                    <div class="contact-methods">
+                        <a href="https://wa.me/59173476653" class="contact-method" target="_blank">
+                            <div class="contact-method-icon whatsapp">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="contact-method-text">
+                                <h4>WhatsApp 1</h4>
+                                <p>+591 73476653</p>
+                            </div>
+                        </a>
+
+                        <a href="https://wa.me/59160326086" class="contact-method" target="_blank">
+                            <div class="contact-method-icon whatsapp">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="contact-method-text">
+                                <h4>WhatsApp 2</h4>
+                                <p>+591 60326086</p>
+                            </div>
+                        </a>
+
+                        <a href="mailto:PedacitoPasteleria@gmail.com" class="contact-method">
+                            <div class="contact-method-icon email">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-method-text">
+                                <h4>Email</h4>
+                                <p>PedacitoPasteleria@gmail.com</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-cta reveal">
+                    <h3>¿Listo para ordenar?</h3>
+                    <p>Haz tu pedido ahora mismo por WhatsApp y te atenderemos con gusto</p>
+                    <div class="contact-cta-buttons">
+                        <a href="https://wa.me/59173476653?text=Hola%20Pedacitos!%20Me%20gustaría%20hacer%20un%20pedido"
+                            class="btn btn-whatsapp" target="_blank">
+                            <i class="fab fa-whatsapp"></i> WhatsApp: 73476653
+                        </a>
+                        <a href="https://wa.me/59160326086?text=Hola%20Pedacitos!%20Me%20gustaría%20hacer%20un%20pedido"
+                            class="btn btn-gold" target="_blank">
+                            <i class="fab fa-whatsapp"></i> WhatsApp: 60326086
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="assets/logo.png" alt="Pedacitos Pastelería">
+                    <p>Creamos pasteles con amor para endulzar tus momentos más especiales. Cada producto es hecho con
+                        ingredientes de calidad y mucha dedicación.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#productos">Productos</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-social">
+                    <h4>Síguenos</h4>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100057600588020" class="social-icon facebook"
+                            target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/pasteleria_pedacito_sucre.bo/" class="social-icon instagram"
+                            target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/59173476653" class="social-icon whatsapp" target="_blank"
+                            aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Pedacitos Pastelería. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/59173476653?text=Hola%20Pedacitos!%20Me%20gustaría%20hacer%20un%20pedido"
+        class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
