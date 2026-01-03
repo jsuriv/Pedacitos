@@ -29,6 +29,20 @@
 </head>
 
 <body>
+    <!-- Promo Banner -->
+    <div class="promo-banner" id="promo-banner">
+        <div class="container">
+            <div class="promo-content">
+                <p>🎂 <strong>¡Oferta especial!</strong> 10% de descuento en tortas personalizadas este mes</p>
+                <a href="https://wa.me/59173476653?text=Hola!%20Quiero%20aprovechar%20la%20oferta%20del%2010%25%20de%20descuento"
+                    class="btn btn-gold" target="_blank">¡Ordenar ahora!</a>
+            </div>
+            <button class="promo-close" id="promo-close" aria-label="Cerrar banner">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+
     <!-- Header -->
     <header class="header" id="header">
         <div class="container">
@@ -40,11 +54,13 @@
                 <ul class="nav-menu" id="nav-menu">
                     <li><a href="#inicio" class="nav-link active">Inicio</a></li>
                     <li><a href="#productos" class="nav-link">Productos</a></li>
+                    <li><a href="#galeria" class="nav-link">Galería</a></li>
                     <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+                    <li><a href="#faq" class="nav-link">FAQ</a></li>
                     <li><a href="#contacto" class="nav-link">Contacto</a></li>
                     <li><a href="https://wa.me/59173476653?text=Hola%20Pedacitos!%20Me%20gustaría%20hacer%20un%20pedido"
                             class="btn btn-primary" target="_blank">
-                            <i class="fab fa-whatsapp"></i> Pedir Ahora
+                            <i class="fab fa-whatsapp"></i> Pedir
                         </a></li>
                 </ul>
 
@@ -57,11 +73,17 @@
         </div>
     </header>
 
+    <!-- Dark Mode Toggle -->
+    <button class="theme-toggle" id="theme-toggle" aria-label="Cambiar tema">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+    </button>
+
     <!-- Hero Section -->
     <section class="hero" id="inicio">
         <div class="container">
             <div class="hero-content">
-                <div class="hero-text reveal">
+                <div class="hero-text fade-in-left">
                     <h1>Endulzamos tus <span>momentos especiales</span></h1>
                     <p>En Pedacitos creamos pasteles artesanales con amor y dedicación. Cada postre es una obra de arte
                         hecha especialmente para ti.</p>
@@ -75,7 +97,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="hero-image reveal">
+                <div class="hero-image fade-in-right">
                     <img src="assets/logo.png" alt="Pedacitos Pastelería">
                     <div class="hero-decorations">
                         <div class="decoration decoration-1"></div>
@@ -87,15 +109,39 @@
         </div>
     </section>
 
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid stagger-children">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="500">0</span>
+                    <span class="stat-label">Clientes Felices</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="1000">0</span>
+                    <span class="stat-label">Pasteles Entregados</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="5">0</span>
+                    <span class="stat-label">Años de Experiencia</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="50">0</span>
+                    <span class="stat-label">Recetas Únicas</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Products Section -->
     <section class="section products" id="productos">
         <div class="container">
-            <div class="section-header reveal">
+            <div class="section-header fade-in-up">
                 <h2>Nuestros Productos</h2>
                 <p>Descubre nuestra deliciosa variedad de pasteles, tortas y postres artesanales</p>
             </div>
 
-            <div class="products-categories reveal">
+            <div class="products-categories fade-in-up">
                 <button class="category-btn active" data-category="all">Todos</button>
                 <button class="category-btn" data-category="tortas">Tortas</button>
                 <button class="category-btn" data-category="cupcakes">Cupcakes</button>
@@ -103,12 +149,12 @@
                 <button class="category-btn" data-category="especiales">Especiales</button>
             </div>
 
-            <div class="products-grid">
+            <div class="products-grid stagger-children">
                 <!-- Tortas -->
-                <div class="product-card reveal" data-category="tortas">
+                <div class="product-card" data-category="tortas">
                     <div class="product-image">
                         <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&h=300&fit=crop"
-                            alt="Torta de Chocolate">
+                            alt="Torta de Chocolate" loading="lazy">
                         <span class="product-badge">Popular</span>
                     </div>
                     <div class="product-info">
@@ -124,10 +170,10 @@
                     </div>
                 </div>
 
-                <div class="product-card reveal" data-category="tortas">
+                <div class="product-card" data-category="tortas">
                     <div class="product-image">
                         <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=400&h=300&fit=crop"
-                            alt="Torta Red Velvet">
+                            alt="Torta Red Velvet" loading="lazy">
                     </div>
                     <div class="product-info">
                         <h4>Torta Red Velvet</h4>
@@ -142,9 +188,9 @@
                     </div>
                 </div>
 
-                <div class="product-card reveal" data-category="tortas">
+                <div class="product-card" data-category="tortas">
                     <div class="product-image">
-                        <img src="assets/strawberry_cake.png" alt="Torta de Fresas">
+                        <img src="assets/strawberry_cake.png" alt="Torta de Fresas" loading="lazy">
                         <span class="product-badge">Nuevo</span>
                     </div>
                     <div class="product-info">
@@ -161,10 +207,10 @@
                 </div>
 
                 <!-- Cupcakes -->
-                <div class="product-card reveal" data-category="cupcakes">
+                <div class="product-card" data-category="cupcakes">
                     <div class="product-image">
                         <img src="https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?w=400&h=300&fit=crop"
-                            alt="Cupcakes Variados">
+                            alt="Cupcakes Variados" loading="lazy">
                         <span class="product-badge">Pack</span>
                     </div>
                     <div class="product-info">
@@ -180,10 +226,10 @@
                     </div>
                 </div>
 
-                <div class="product-card reveal" data-category="cupcakes">
+                <div class="product-card" data-category="cupcakes">
                     <div class="product-image">
                         <img src="https://images.unsplash.com/photo-1587668178277-295251f900ce?w=400&h=300&fit=crop"
-                            alt="Cupcakes de Vainilla">
+                            alt="Cupcakes de Vainilla" loading="lazy">
                     </div>
                     <div class="product-info">
                         <h4>Cupcakes de Vainilla</h4>
@@ -199,10 +245,10 @@
                 </div>
 
                 <!-- Postres -->
-                <div class="product-card reveal" data-category="postres">
+                <div class="product-card" data-category="postres">
                     <div class="product-image">
                         <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=300&fit=crop"
-                            alt="Cheesecake">
+                            alt="Cheesecake" loading="lazy">
                         <span class="product-badge">Favorito</span>
                     </div>
                     <div class="product-info">
@@ -218,10 +264,10 @@
                     </div>
                 </div>
 
-                <div class="product-card reveal" data-category="postres">
+                <div class="product-card" data-category="postres">
                     <div class="product-image">
                         <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400&h=300&fit=crop"
-                            alt="Tiramisú">
+                            alt="Tiramisú" loading="lazy">
                     </div>
                     <div class="product-info">
                         <h4>Tiramisú</h4>
@@ -237,10 +283,10 @@
                 </div>
 
                 <!-- Especiales -->
-                <div class="product-card reveal" data-category="especiales">
+                <div class="product-card" data-category="especiales">
                     <div class="product-image">
                         <img src="https://images.unsplash.com/photo-1535254973040-607b474cb50d?w=400&h=300&fit=crop"
-                            alt="Torta de Cumpleaños">
+                            alt="Torta de Cumpleaños" loading="lazy">
                         <span class="product-badge">Personalizable</span>
                     </div>
                     <div class="product-info">
@@ -256,9 +302,9 @@
                     </div>
                 </div>
 
-                <div class="product-card reveal" data-category="especiales">
+                <div class="product-card" data-category="especiales">
                     <div class="product-image">
-                        <img src="assets/wedding_cake.png" alt="Torta de Bodas">
+                        <img src="assets/wedding_cake.png" alt="Torta de Bodas" loading="lazy">
                         <span class="product-badge">Premium</span>
                     </div>
                     <div class="product-info">
@@ -277,14 +323,164 @@
         </div>
     </section>
 
+    <!-- Gallery Section -->
+    <section class="section gallery" id="galeria">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <h2>Nuestra Galería</h2>
+                <p>Mira algunos de nuestros trabajos más destacados</p>
+            </div>
+
+            <div class="gallery-grid stagger-children">
+                <div class="gallery-item">
+                    <img src="assets/gallery_1.png" alt="Pastel de cumpleaños" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/gallery_2.png" alt="Cupcakes decorados" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/gallery_3.png" alt="Postre de chocolate" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=400&h=400&fit=crop"
+                        alt="Torta elegante" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec?w=400&h=400&fit=crop"
+                        alt="Pastel rosa" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1562440499-64c9a111f713?w=400&h=400&fit=crop"
+                        alt="Cupcakes coloridos" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?w=400&h=400&fit=crop"
+                        alt="Torta de chocolate" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1563778084459-859099e48677?w=400&h=400&fit=crop"
+                        alt="Pastel decorado" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <h2>Lo que dicen nuestros clientes</h2>
+                <p>Testimonios de clientes satisfechos</p>
+            </div>
+
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">La torta de cumpleaños de mi hija quedó espectacular. Todos quedaron
+                        encantados con el sabor y la decoración. ¡Definitivamente volveré!</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">MC</div>
+                        <div class="testimonial-info">
+                            <h4>María Condori</h4>
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-text">Pedí la torta de bodas y superó todas mis expectativas. El equipo de
+                        Pedacitos fue muy profesional y atento a todos los detalles.</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">JR</div>
+                        <div class="testimonial-info">
+                            <h4>José Rodríguez</h4>
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-text">Los cupcakes son deliciosos y siempre llegan frescos. Los pido para
+                        todas las reuniones de oficina. ¡Recomendadísimos!</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">LP</div>
+                        <div class="testimonial-info">
+                            <h4>Laura Paz</h4>
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-text">El cheesecake es simplemente perfecto. Cremoso, con el punto justo de
+                        dulzor. Ya soy cliente frecuente de Pedacitos.</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">CF</div>
+                        <div class="testimonial-info">
+                            <h4>Carlos Fernández</h4>
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- About Section -->
     <section class="section about" id="nosotros">
         <div class="container">
             <div class="about-content">
-                <div class="about-image reveal">
+                <div class="about-image fade-in-left">
                     <img src="assets/bakery.png" alt="Nuestra pastelería">
                 </div>
-                <div class="about-text reveal">
+                <div class="about-text fade-in-right">
                     <h2>Sobre <span>Nosotros</span></h2>
                     <p>En <strong>Pedacitos Pastelería</strong> creemos que cada bocado cuenta una historia. Desde
                         nuestros inicios, nos hemos dedicado a crear pasteles y postres artesanales que endulzan los
@@ -292,7 +488,7 @@
                     <p>Utilizamos ingredientes de la más alta calidad y técnicas tradicionales combinadas con
                         creatividad moderna para ofrecerte productos únicos y deliciosos.</p>
 
-                    <div class="about-features">
+                    <div class="about-features stagger-children">
                         <div class="feature">
                             <div class="feature-icon">🎂</div>
                             <h4>Artesanal</h4>
@@ -311,16 +507,83 @@
         </div>
     </section>
 
+    <!-- FAQ Section -->
+    <section class="section faq" id="faq">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <h2>Preguntas Frecuentes</h2>
+                <p>Resolvemos tus dudas más comunes</p>
+            </div>
+
+            <div class="faq-list fade-in-up">
+                <div class="faq-item active">
+                    <button class="faq-question">
+                        ¿Con cuánta anticipación debo hacer mi pedido?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Recomendamos hacer tu pedido con al menos 48 horas de anticipación para tortas estándar. Para
+                            tortas personalizadas o de bodas, sugerimos 1-2 semanas de anticipación.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        ¿Hacen entregas a domicilio?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sí, realizamos entregas a domicilio en toda la ciudad de Sucre. El costo de envío varía según
+                            la zona. Contáctanos por WhatsApp para más detalles.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        ¿Puedo personalizar mi torta?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>¡Por supuesto! Podemos personalizar sabores, decoraciones, tamaños y diseños según tus
+                            preferencias. Envíanos tu idea y te daremos una cotización.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        ¿Cuáles son los métodos de pago?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Aceptamos efectivo, transferencias bancarias y pagos QR. Para pedidos personalizados
+                            requerimos un anticipo del 50%.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        ¿Tienen opciones sin azúcar o sin gluten?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sí, contamos con opciones especiales para personas con restricciones alimentarias.
+                            Consúltanos y te prepararemos algo delicioso adaptado a tus necesidades.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section class="section contact" id="contacto">
         <div class="container">
-            <div class="section-header reveal">
+            <div class="section-header fade-in-up">
                 <h2>Contáctanos</h2>
                 <p>Estamos listos para hacer realidad tu pedido especial</p>
             </div>
 
             <div class="contact-content">
-                <div class="contact-info reveal">
+                <div class="contact-info fade-in-left">
                     <h3>Información de Contacto</h3>
                     <p>¿Tienes alguna pregunta o quieres hacer un pedido especial? No dudes en contactarnos por
                         cualquiera de nuestros canales.</p>
@@ -358,7 +621,7 @@
                     </div>
                 </div>
 
-                <div class="contact-cta reveal">
+                <div class="contact-cta fade-in-right">
                     <h3>¿Listo para ordenar?</h3>
                     <p>Haz tu pedido ahora mismo por WhatsApp y te atenderemos con gusto</p>
                     <div class="contact-cta-buttons">
@@ -391,7 +654,9 @@
                     <ul>
                         <li><a href="#inicio">Inicio</a></li>
                         <li><a href="#productos">Productos</a></li>
+                        <li><a href="#galeria">Galería</a></li>
                         <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#faq">FAQ</a></li>
                         <li><a href="#contacto">Contacto</a></li>
                     </ul>
                 </div>
@@ -420,6 +685,19 @@
             </div>
         </div>
     </footer>
+
+    <!-- Subscription Popup -->
+    <div class="subscribe-popup" id="subscribe-popup">
+        <button class="subscribe-close" id="subscribe-close" aria-label="Cerrar">
+            <i class="fas fa-times"></i>
+        </button>
+        <h4>🎂 ¡Ofertas Exclusivas!</h4>
+        <p>Suscríbete para recibir promociones y descuentos especiales</p>
+        <form class="subscribe-form" id="subscribe-form">
+            <input type="email" placeholder="Tu email" required>
+            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+        </form>
+    </div>
 
     <!-- WhatsApp Floating Button -->
     <a href="https://wa.me/59173476653?text=Hola%20Pedacitos!%20Me%20gustaría%20hacer%20un%20pedido"
